@@ -11,7 +11,7 @@ const MyOrders = () => {
     const fetchOrders = async () => {
         try {
             const response = await axios.post(url + "/api/order/userorders", {}, { headers: { token } });
-            setData(response.data.orders); // Update this to match the key "orders" from the API response
+            setData(response.data.orders); 
         } catch (error) {
             console.error("Error fetching orders:", error);
         }

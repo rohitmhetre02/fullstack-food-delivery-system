@@ -3,9 +3,6 @@ import bodyParser from "body-parser";
 const { json } = bodyParser;
 
 
-
-
-
 // add item user cart
 const addCart = async(req,res) =>{
   try{
@@ -27,7 +24,6 @@ const addCart = async(req,res) =>{
 
 
 // remove items from user cart
-
 const removeFromCart = async (req,res)  => {
     try{
       let userData =await usermodel.findById(req.body.userId);
