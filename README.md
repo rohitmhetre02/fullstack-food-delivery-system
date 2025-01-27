@@ -26,6 +26,10 @@ Build Command: npm install; npm run build
 Publish Directory: The build output will be generated in the ./dist directory. Ensure this is set up correctly for deployment.
 
 
+# Payment Integration Instructions
+For testing the payment functionality in this system, you can use the following dummy Indian card number to successfully place an order:
+Card Number: 4000 0035 6000 0008
+
 
 # Project Description: FoodFlow
 FoodFlow is a full-stack food delivery application developed using the MERN stack (MongoDB, Express, React, Node.js). The platform allows users to order food, track their deliveries, and make payments securely using Indian card numbers. It provides a rich, dynamic user experience with features like menu exploration, filtering options, and adding quantities to the cart.
@@ -38,17 +42,15 @@ The project is powered by a robust backend with MongoDB Atlas for data storage a
 2. Food Ordering:
    Users can browse a detailed menu, filter options, and select food items.
    Quantity selection for each item in the cart.
-3. Order Tracking:
-   Real-time order tracking to monitor delivery status.
-4. Payment Integration:
+3. Payment Integration:
    Integration with Stripe for secure payments using Indian card numbers.
-5. Admin Panel:
+4. Admin Panel:
    Admin users can manage the menu, view orders, and perform administrative tasks.
-6. Menu Exploration:
+5. Menu Exploration:
    Users can explore the menu with filter options to refine their search.
-7. Custom APIs:
+6. Custom APIs:
    Created custom APIs to handle CRUD operations for food items, user data, and orders.
-8. Responsive Design:
+7. Responsive Design:
    Built with React for a responsive, mobile-friendly interface.
 
 
