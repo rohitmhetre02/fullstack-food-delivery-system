@@ -1,4 +1,4 @@
-#full-stack-task-management-app
+# full-stack-task-management-app
 
 #Setup instructions for both the front-end, back-end and Admin.
 1. The project is structured into three main areas: the backend, frontend, and admin panel. Each area has its respective setup instructions and dependencies.
@@ -7,7 +7,7 @@
 4. The use of environment variables for sensitive configurations was essential to keeping the project secure and scalable.
 
 
-#Backend Setup
+# Backend Setup
 Root Directory: backend
 Installation Command : npm install
 Start Command: node server.js
@@ -27,12 +27,12 @@ Publish Directory: The build output will be generated in the ./dist directory. E
 
 
 
-#Project Description: FoodFlow
+# Project Description: FoodFlow
 FoodFlow is a full-stack food delivery application developed using the MERN stack (MongoDB, Express, React, Node.js). The platform allows users to order food, track their deliveries, and make payments securely using Indian card numbers. It provides a rich, dynamic user experience with features like menu exploration, filtering options, and adding quantities to the cart.
 
 The project is powered by a robust backend with MongoDB Atlas for data storage and various technologies like JWT for authentication, Stripe for payments, and more. The frontend is built using React, ensuring a responsive and interactive design.
 
-#Features:
+# Features:
 1. User Authentication:
    Sign up and login functionality using JWT-based authentication.
 2. Food Ordering:
@@ -52,18 +52,18 @@ The project is powered by a robust backend with MongoDB Atlas for data storage a
    Built with React for a responsive, mobile-friendly interface.
 
 
-#Assumptions
+# Assumptions
 1. Payment Integration: Assumed that users would have valid Indian card details for the payment process, and thus, the Stripe integration was focused on that.
 2. Admin Role: Assumed that only authorized admins would have access to the admin panel for managing menus and orders.
 3. Internet Connectivity: Assumed that users have a stable internet connection forpayment processing.
 
-#Challenges
+# Challenges
 1. Payment Integration: Integrating Stripe for secure payments, especially with Indian card numbers, posed challenges regarding regional compatibility and API integration.
 2. User Authentication: Ensuring secure sign-ups and logins, particularly with JWT and password hashing using bcrypt, was tricky at first.
 3. Frontend Design: Ensuring a responsive UI across multiple devices required constant testing and adjustments in CSS and React components.
 4. API Optimization: Ensuring smooth data flow between the frontend and backend while creating custom APIs for menu management, orders, and users required optimizing the server-side performance.
    
-#Limitations
+# Limitations
 1. Regional Payment Support: Only Indian card payments are supported, limiting the global reach of the app.
 2. Admin Panel Limitations: The admin panel could be further expanded with more features like reporting, advanced analytics, and user management.
 
