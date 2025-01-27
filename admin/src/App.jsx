@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
 
-  const url = "http://localhost:5000"
+  const url = "https://foodflow-qy5a.onrender.com"
 
   return (
     <div>
