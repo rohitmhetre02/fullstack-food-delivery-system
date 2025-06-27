@@ -1,74 +1,128 @@
-# full-stack-task-management-app
 
-#Setup instructions for both the front-end, back-end and Admin.
-1. The project is structured into three main areas: the backend, frontend, and admin panel. Each area has its respective setup instructions and dependencies.
-2. The backend handles the API and data processing, while the frontend and admin areas manage the user interface and admin control panel.
-3. During development, a key challenge was ensuring smooth communication between the frontend and backend, especially while handling user authentication and data management.
-4. The use of environment variables for sensitive configurations was essential to keeping the project secure and scalable.
+# 🍽️ FoodFlow – Full-Stack Food Delivery App
 
+**FoodFlow** is a dynamic and responsive full-stack food delivery application built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js). It enables users to order food online, make secure payments, and track their orders. An integrated **admin panel** allows authorized personnel to manage menu items, view orders, and perform other administrative tasks.
 
-# Backend Setup
-Root Directory: backend
-Installation Command : npm install
-Start Command: node server.js
-Environment Variables: Ensure you have the necessary environment variables set for the backend to function properly. This may include database configurations, API keys, and other sensitive data.
+---
 
+## 🚀 Live Demo
 
-# Frontend Setup
-Root Directory: frontend
-Build Command: npm install; npm run build
-Publish Directory: The build output will be generated in the ./dist directory. Ensure this is set up correctly for deployment.
+- 🔗 [Frontend - User Site]([https://foodflow-ui.onrender.com](https://foodflow-ui.onrender.com/))
+- 🔗 [Backend - API Endpoint]([https://foodflow-api.onrender.com](https://foodflow-qy5a.onrender.com/))
+- 🔗 [Admin Panel]([https://foodflow-admin.onrender.com](https://full-stack-task-management-app-8s31.onrender.com/list))
+
+> ⚠️ **Important:** Please ensure the backend server is running first (`https://foodflow-api.onrender.com`) before accessing the frontend or admin panel. All data and authentication rely on the API being active.
 
 
-# Admin Setup
-Root Directory: admin
-Build Command: npm install; npm run build
-Publish Directory: The build output will be generated in the ./dist directory. Ensure this is set up correctly for deployment.
+---
+
+## 📦 Project Overview
+
+The project is structured into three main areas:
+- **Backend:** Node.js/Express API for data and authentication
+- **Frontend:** React-based interface for customers
+- **Admin Panel:** Separate React app for admin management
+
+During development, key focus areas included smooth communication between frontend and backend, user authentication, Stripe payment integration, and secure use of environment variables.
+
+---
+
+## 📋 Setup Instructions
+
+### 🔧 Backend Setup
+- **Directory:** `/backend`
+- **Install Dependencies:**
+  ```bash
+  npm install
+  ```
+- **Start Server:**
+  ```bash
+  node server.js
+  ```
+- **Environment Variables:**
+  Create a `.env` file in `/backend` with:
+  ```env
+  PORT=5000
+  MONGO_URI=your_mongo_db_connection
+  JWT_SECRET=your_jwt_secret
+  STRIPE_SECRET_KEY=your_stripe_key
+  ```
+
+---
+
+### 🖥️ Frontend Setup
+- **Directory:** `/frontend`
+- **Commands:**
+  ```bash
+  npm install
+  npm run build
+  ```
+- **Output Directory:** `/frontend/dist`
+
+---
+
+### 🛠 Admin Panel Setup
+- **Directory:** `/admin`
+- **Commands:**
+  ```bash
+  npm install
+  npm run build
+  ```
+- **Output Directory:** `/admin/dist`
+
+---
+
+## 💳 Payment Integration (Test Mode)
+
+To test Stripe payment functionality, use this **dummy Indian card number**:
+
+- **Card Number:** `4000 0035 6000 0008`
+- **Expiry Date:** Any future date
+- **CVV:** Any 3-digit number
+
+---
+
+## ✨ Core Features
+
+### ✅ User Side
+- JWT-based Sign Up / Login
+- Browse and filter menu items
+- Add food items with quantity to cart
+- Checkout using Stripe payment gateway
+- Track order status and view order history
+
+### 🔐 Admin Panel
+- Admin authentication
+- Create, update, and delete menu items
+- View all customer orders
+- Basic menu and order management UI
+
+### 🎨 Frontend UI
+- React-based single-page apps
+- Responsive layout using CSS and Bootstrap
+- Optimized for desktop and mobile devices
+
+---
+
+## 🔐 Assumptions
+
+- Users have valid Indian card info for payment testing
+- Admins are authenticated before accessing the panel
+- Stable internet connection is required for full functionality
+
+---
+
+## ⚠️ Challenges Faced
+
+- **Stripe Integration:** Regional testing for Indian cards
+- **Authentication:** JWT + bcrypt setup and token handling
+- **Responsive Design:** UI tuning across multiple device sizes
+- **API Handling:** Secure custom APIs for food, orders, users
 
 
-# Payment Integration Instructions
-For testing the payment functionality in this system, you can use the following dummy Indian card number to successfully place an order:
-Card Number: 4000 0035 6000 0008
 
+## 🚫 Limitations
 
-# Project Description: FoodFlow
-FoodFlow is a full-stack food delivery application developed using the MERN stack (MongoDB, Express, React, Node.js). The platform allows users to order food, track their deliveries, and make payments securely using Indian card numbers. It provides a rich, dynamic user experience with features like menu exploration, filtering options, and adding quantities to the cart.
-
-The project is powered by a robust backend with MongoDB Atlas for data storage and various technologies like JWT for authentication, Stripe for payments, and more. The frontend is built using React, ensuring a responsive and interactive design.
-
-# Features:
-1. User Authentication:
-   Sign up and login functionality using JWT-based authentication.
-2. Food Ordering:
-   Users can browse a detailed menu, filter options, and select food items.
-   Quantity selection for each item in the cart.
-3. Payment Integration:
-   Integration with Stripe for secure payments using Indian card numbers.
-4. Admin Panel:
-   Admin users can manage the menu, view orders, and perform administrative tasks.
-5. Menu Exploration:
-   Users can explore the menu with filter options to refine their search.
-6. Custom APIs:
-   Created custom APIs to handle CRUD operations for food items, user data, and orders.
-7. Responsive Design:
-   Built with React for a responsive, mobile-friendly interface.
-
-
-# Assumptions
-1. Payment Integration: Assumed that users would have valid Indian card details for the payment process, and thus, the Stripe integration was focused on that.
-2. Admin Role: Assumed that only authorized admins would have access to the admin panel for managing menus and orders.
-3. Internet Connectivity: Assumed that users have a stable internet connection forpayment processing.
-
-# Challenges
-1. Payment Integration: Integrating Stripe for secure payments, especially with Indian card numbers, posed challenges regarding regional compatibility and API integration.
-2. User Authentication: Ensuring secure sign-ups and logins, particularly with JWT and password hashing using bcrypt, was tricky at first.
-3. Frontend Design: Ensuring a responsive UI across multiple devices required constant testing and adjustments in CSS and React components.
-4. API Optimization: Ensuring smooth data flow between the frontend and backend while creating custom APIs for menu management, orders, and users required optimizing the server-side performance.
-   
-# Limitations
-1. Regional Payment Support: Only Indian card payments are supported, limiting the global reach of the app.
-2. Admin Panel Limitations: The admin panel could be further expanded with more features like reporting, advanced analytics, and user management.
-
-
-
+- **Regional Support:** Payments are limited to Indian card numbers only (test mode)
+- **Admin Features:** No advanced analytics or reporting (yet)
 
