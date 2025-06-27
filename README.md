@@ -7,9 +7,10 @@
 
 ## 🚀 Live Demo
 
-- 🔗 [Frontend - User Site]([https://foodflow-ui.onrender.com](https://foodflow-ui.onrender.com/))
-- 🔗 [Backend - API Endpoint]([https://foodflow-api.onrender.com](https://foodflow-qy5a.onrender.com/))
-- 🔗 [Admin Panel]([https://foodflow-admin.onrender.com](https://full-stack-task-management-app-8s31.onrender.com/list))
+- 🔗 [Frontend - User Site](https://foodflow-ui.onrender.com)
+- 🔗 [Backend - API Endpoint](https://foodflow-qy5a.onrender.com)
+- 🔗 [Admin Panel](https://full-stack-task-management-app-8s31.onrender.com/list)
+
 
 > ⚠️ **Important:** Please ensure the backend server is running first (`https://foodflow-api.onrender.com`) before accessing the frontend or admin panel. All data and authentication rely on the API being active.
 
